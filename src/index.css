@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cream-bg: #FAF9F5;
+    --cream-card: #FFFFFF;
+    --cream-border: #D2E3D6;
+    --green-accent: #4B935B;
+    --green-dark: #2A5D37;
+    --text-primary: #0E1B12;
+    --text-secondary: #496251;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--cream-bg);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  /* Custom luxury creamy green scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F4F8F5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #A7CFB1;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4B935B;
+  }
+}
+
+@layer utilities {
+  .glass-cream {
+    background: rgba(250, 249, 245, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(75, 147, 91, 0.2);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(210, 227, 214, 0.85);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(75, 147, 91, 0.25);
+  }
+
+  .creamgreen-gradient {
+    background: linear-gradient(135deg, #F4F8F5 0%, #E7F2EA 50%, #D0E6D6 100%);
+  }
+
+  .luxury-green-gradient {
+    background: linear-gradient(135deg, #4B935B 0%, #2A5D37 50%, #1D4528 100%);
+  }
+
+  .luxury-green-text {
+    background: linear-gradient(135deg, #122E1A 0%, #2A5D37 50%, #4B935B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .emerald-glow {
+    box-shadow: 0 10px 30px -5px rgba(75, 147, 91, 0.35);
+  }
+}
+
