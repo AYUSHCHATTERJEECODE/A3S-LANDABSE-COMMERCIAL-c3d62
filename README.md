@@ -45,7 +45,7 @@ npm run build
 
 1. Push this repository to GitHub (or use the GitHub CLI integration provided).
 2. Go to [vercel.com](https://vercel.com) and click **"Add New Project"**.
-3. Import this repository (**`A3S-LANDBASE-COMMERCIAL`**).
+3. Import this repository (**`A3S-LANDABSE-COMMERCIAL`**).
 4. Set the Framework Preset to **Vite**.
 5. Add the Environment Variables:
    - `VITE_SUPABASE_URL`: `https://iupobugldmikbejolkpm.supabase.co`
